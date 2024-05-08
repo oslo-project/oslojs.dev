@@ -22,8 +22,7 @@ jobs:
       - name: Create dist directory
         run: |
           mkdir dist
-          cp index.html dist/index.html
-          cp logo-border.svg dist/logo-border.svg
+          cp {index.html,logo-border.svg,favicon.ico} dist/
       - name: Install wrangler
         run: npm i -g wrangler
       - name: Deploy
