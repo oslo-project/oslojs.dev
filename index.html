@@ -1,0 +1,222 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Oslo</title>
+    <meta name="description" content="Oslo is an open-source project that aims to provide simple, high-quality auth
+    packages for server-side JS." />
+
+    <meta name=" twitter:card" content="summary" />
+    <meta name="twitter:site" content="@pilcrowonpaper" />
+    <meta name="twitter:title" content="Oslo" />
+    <meta name="twitter:description" content="Oslo is an open-source project that aims to provide simple, high-quality auth
+    packages for server-side JS." />
+
+    <meta property="og:site_name" content="Oslo" />
+    <meta property="og:title" content="Oslo" />
+    <meta property="og:url" content="https://oslojs.dev" />
+    <meta property="og:description" content="Oslo is an open-source project that aims to provide simple, high-quality auth
+    packages for server-side JS." />
+
+    <link ref="icon" href="/logo-border.svg" type="image/svg">
+</head>
+
+<body>
+    <main>
+        <div id="hero">
+            <img id="hero-logo" src="./logo-border.svg" height=150rem" width="150px" alt="logo of Oslo" />
+            <h1 id="hero-title">Oslo</h1>
+            <h2 id="hero-headline">Simple auth packages for the entire JS ecosystem.</h2>
+            <p id="hero-description">Oslo is an open-source project that aims to provide high-quality auth
+                packages for server-side JS. Runtime agnostic. Zero third-party dependencies. Fully typed. Ready to go.
+            </p>
+            <a id="hero-github-link" href="https://github.com/oslo-project">GitHub repositories→</a>
+        </div>
+        <section id="packages-section">
+            <div id="packages-section-inner">
+                <h2 id="packages-title">All packages</h2>
+                <div id="package-list">
+                    <div class="package">
+                        <h3 class="package-name">
+                            <a class="package-link" href="/">@oslojs/binary</a>
+                        </h3>
+                        <p class="package-description">Primitives for working with binary data.</p>
+                    </div>
+                    <div class="package">
+                        <h3 class="package-name">
+                            <a class="package-link" href="/">@oslojs/crypto</a>
+
+                        </h3>
+                        <p class="package-description">SHA-1, SHA-2, HMAC, and secure RNGs.</p>
+                    </div>
+                    <div class="package">
+                        <h3 class="package-name">
+                            <a class="package-link" href="/">@oslojs/encoding</a>
+
+                        </h3>
+                        <p class="package-description">Hex, base32, base64, and base64url encoding.</p>
+                    </div>
+                    <div class="package">
+                        <h3 class="package-name">
+                            <a class="package-link" href="/">@oslojs/oauth2</a>
+
+                        </h3>
+                        <p class="package-description">OAuth 2.0 client APIs.</p>
+                    </div>
+                    <div class="package">
+                        <h3 class="package-name">
+                            <a class="package-link" href="/">@oslojs/otp</a>
+                        </h3>
+                        <p class="package-description">One-time passwords with HOTP and TOTP.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-inner">
+            <p id="copyright">Released under the MIT license</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+            Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        line-height: 1.5;
+        tab-size: 4;
+        padding: 0;
+        margin: 0;
+        color: rgb(44, 44, 44);
+    }
+
+    #hero {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin: auto;
+        max-width: 40rem;
+        text-align: center;
+    }
+
+    #hero-logo {
+        width: fit-content;
+        margin: auto;
+        display: block;
+    }
+
+    #hero-title {
+        font-size: 1.5rem;
+        width: fit-content;
+        margin: auto;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        margin-top: 0.25rem;
+    }
+
+    #hero-headline {
+        font-size: 3rem;
+        width: fit-content;
+        margin: auto;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    #hero-description {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    #hero-github-link {
+        color: rgb(77, 107, 255);
+        text-decoration: underline;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    #packages-section {
+        background-color: rgb(245, 245, 245);
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+
+    #packages-section-inner {
+        margin: auto;
+        max-width: 60rem;
+    }
+
+    #packages-title {
+        font-size: 2.5rem;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #package-list {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .package {
+        background-color: white;
+        border-radius: 8px;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .package-name {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .package-description {
+        font-size: 1rem;
+    }
+
+    .package-link {
+        text-decoration: underline;
+        color: inherit;
+    }
+
+    footer {
+        padding-bottom: 4rem;
+        background-color: rgb(245, 245, 245);
+    }
+
+    footer hr {
+        margin-bottom: 1rem;
+        border-color: gray;
+    }
+
+    #footer-inner {
+        max-width: 60rem;
+        margin: auto;
+        border-top: 1px solid gray;
+        padding-top: 2rem;
+    }
+
+    #copyright {
+        font-size: 0.8rem;
+        color: gray;
+        width: fit-content;
+        margin: auto;
+    }
+</style>
