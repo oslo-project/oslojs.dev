@@ -22,7 +22,7 @@ jobs:
       - name: Create dist directory
         run: |
           mkdir dist
-          cp {index.html,logo-border.svg,favicon.ico} dist/
+          cp {index.html,logo-border.svg,favicon.ico,logo-256.jpg} dist/
       - name: Install wrangler
         run: npm i -g wrangler
       - name: Deploy
