@@ -26,7 +26,7 @@
 <body>
     <main>
         <div id="hero">
-            <img id="hero-logo" src="./logo-border.svg" height=150rem" width="150px" alt="logo of Oslo" />
+            <img id="hero-logo" src="./logo-border.svg" alt="logo of Oslo" />
             <h1 id="hero-title">Oslo</h1>
             <h2 id="hero-headline">Simple auth packages for the entire JS ecosystem.</h2>
             <p id="hero-description">Oslo is an open-source project that aims to provide high-quality auth
@@ -66,7 +66,7 @@
                     </div>
                     <div class="package">
                         <h3 class="package-name">
-                            <a class="package-link"href="https://otp.oslojs.dev">@oslojs/otp</a>
+                            <a class="package-link" href="https://otp.oslojs.dev">@oslojs/otp</a>
                         </h3>
                         <p class="package-description">One-time passwords with HOTP and TOTP.</p>
                     </div>
@@ -102,15 +102,16 @@
     #hero {
         padding-top: 8rem;
         padding-bottom: 4rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
         margin: auto;
         max-width: 40rem;
         text-align: center;
     }
 
     #hero-logo {
-        width: fit-content;
+        width: 8rem;
+        height: 8rem;
         margin: auto;
         display: block;
     }
@@ -125,7 +126,7 @@
     }
 
     #hero-headline {
-        font-size: 3rem;
+        font-size: 2.5rem;
         width: fit-content;
         margin: auto;
         font-weight: 600;
@@ -146,14 +147,30 @@
         font-weight: 600;
     }
 
+    @media (min-width: 640px) {
+        #hero-logo {
+            width: 10rem;
+            height: 10rem;
+            margin: auto;
+            display: block;
+        }
+
+        #hero-headline {
+            font-size: 3rem;
+            width: fit-content;
+            margin: auto;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+    }
+
     #packages-section {
         background-color: rgb(245, 245, 245);
         padding-top: 2rem;
         padding-bottom: 6rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
-
 
     #packages-section-inner {
         margin: auto;
@@ -169,7 +186,7 @@
     #package-list {
         margin-top: 1rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
     }
 
@@ -194,6 +211,15 @@
     .package-link {
         text-decoration: underline;
         color: inherit;
+    }
+
+    @media (min-width: 800px) {
+        #package-list {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
     }
 
     footer {
